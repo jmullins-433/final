@@ -50,6 +50,7 @@ NAVBAR ↓
 
 
 nav {
+    padding-top: 32px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -63,6 +64,53 @@ nav {
 .nav__logo {
     display: flex;
     align-items: center;
+}
+
+.nav__logo--img {
+    height: 40px;
+    width: 40px;
+}
+
+.nav__logo--title {
+    font-weight: 900;
+    font-size: 24px;
+    margin-left: 12px;
+    padding: 2px;
+}
+
+.nav__links {
+    display: flex;
+    align-items: center;
+    padding-bottom: 2px;
+}
+
+.nav__link {
+    font-size: 14px;
+    font-weight: 600;
+    padding-top: 4px;
+    margin: 0 24px;
+    position: relative;
+}
+
+a {
+    display: inline;
+    text-decoration: none;
+}
+
+.login {
+    margin-left: 48px;
+}
+
+.nav__link--primary {
+    padding: 10px 32px;
+    margin-top: 2px;
+    border-radius: 9999px;
+    background-color: #6415ff;
+    color:#fff;
+    line-height: 1.5;
+    border: none;
+    transition: all 30ms ease;
+    
 }
 
 
@@ -140,12 +188,117 @@ HEADER / ABOUT US ↓
 
 */
 
+header {
+    display: flex;
+    flex-direction: column;
+
+}
+
 
 header .row {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
+.header__description {
+    width: 40%;
+}
+
+h1 {
+    font-size: 48px;
+    color: #1a202c;
+    line-height: 1.25;
+}
+
+.header__description--para {
+    margin: 32px 0;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.header__email {
+  width: 100%;
+  max-width: 448px;
+  height: 68px;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header__email--input {
+    width: 100%;
+    border-radius: 500px;
+    border: 2px solid rgb(229,231,235);
+    padding: 20px 192px 20px 32px;
+    color: rgb(36,62,99);
+    font-size: 16px;
+    font-weight: 500;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.header__email--btn {
+    z-index: 2;
+    padding: 16px 32px;
+    margin: 8px;
+    height: calc(100% - 16px);
+    border-radius: 500px;
+    width: 160px;
+    border: none;
+    background-color: #6415ff;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.header__email--btn:hover {
+    background-color: rgba(60, 13, 153);
+}
+
+button {
+    cursor: pointer;
+}
+
+
+.header__customers--title {
+    margin-top: 80px;
+    color: #a0aea0;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.header__customers {
+    margin-top: 16px;
+    padding-right: 128px;
+    opacity: 0.5;
+}
+
+.header__img {
+    width: 100%;
+    max-width: 768px;
+}
+
+.header__img--wrapper {
+    width: calc(100% - 40%);
+}
+
+img {
+    width: 100%;
+}
+
+
+
+
+
+
 
 
 /* 
