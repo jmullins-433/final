@@ -92,6 +92,11 @@ nav {
     position: relative;
 }
 
+.nav__link:hover {
+    text-decoration: underline #6415ff 2px;
+    text-underline-offset: 8px;
+}
+
 a {
     display: inline;
     text-decoration: none;
@@ -110,6 +115,7 @@ a {
     line-height: 1.5;
     border: none;
     transition: all 30ms ease;
+    text-decoration: none !important;
     
 }
 
