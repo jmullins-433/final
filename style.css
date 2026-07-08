@@ -335,6 +335,10 @@ FEATURES ↓
     margin-top: 40px;
 }
 
+.feature {
+    width: calc(100%/ 3);
+}
+
 .section__tag {
     color: #6415ff;
     font-size: 16px;
