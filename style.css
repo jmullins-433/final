@@ -650,7 +650,7 @@ PRICING ↓
 .plan {
     position: relative;
     margin-top: 48px;
-    width: calc(100% / 3);
+    width: calc(100%/3);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -661,7 +661,6 @@ PRICING ↓
     padding-left: 2rem;
     padding-right: 32px;
     padding-top: 8px;
-   
 }
 
 .plan__stripe {
@@ -695,8 +694,41 @@ PRICING ↓
     margin-left: 24px;
 }
 
-.plan:nth-child(2n+1) .plan__name {
+.plan:nth-child(2n+1) .plan__duration {
+    color: #a0aea0;
+}
+
+.plan:nth-child(2n+1) .plan__name,
+.plan:nth-child(2n+1) .plan__price,
+.plan:nth-child(2n+1) .plan__target {
     color: #1a202c;
+}
+
+.plan:nth-child(2) {
+    background: linear-gradient(135deg, rgb(76,81,191) 0%, rgb(102, 126, 204) 100%);
+}
+
+.plan:nth-child(2) .plan__name,
+.plan:nth-child(2) .plan__price,
+.plan:nth-child(2) .plan__target,
+.plan:nth-child(2) .plan__feature,
+.plan:nth-child(2) .plan__duration {
+    color: #f7fafc;
+}
+
+.plan:nth-child(2) .plan__button {
+    color: #6415ff;
+    background-color: #f7fafc;
+}
+
+.plan:nth-child(3) .plan__stripe {
+    color: #f7fafc;
+    background: linear-gradient(115deg, rgb(245,101, 101) 0%, rgb(254, 178, 178) 100%);
+}
+
+.plan:nth-child(3) .plan__button {
+    color:#f7fafc;
+    background: linear-gradient(115deg, rgb(245,101, 101) 0%, rgb(254, 178, 178) 100%);
 }
 
 .plan__price {
@@ -751,6 +783,10 @@ PRICING ↓
     letter-spacing: .05em;
 }
 
+.plan__button:hover {
+    transform: translate(1px, -1px);
+}
+
 .plan:nth-child(1) .plan__button {
     color: #f7fafc;
     background: linear-gradient(115deg, rgb(56,178,172) 0%, rgb(129, 230, 217) 100% );
@@ -764,8 +800,100 @@ TESTIMONIALS ↓
 
 #testimonials .row {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
+.test_img--wrapper {
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+}
+
+.test__img {
+    width: 600px;
+}
+
+#testimonials .section__title {
+    text-align: left;
+    line-height: 1.25;
+}
+
+#testimonials .section__para {
+    margin-bottom: 48px;
+}
+
+.test__description {
+    display: flex;
+    flex-direction: column;
+    padding-left: 64px;
+    
+}
+
+.test__bottom {
+    display: flex;
+    margin-top: 48px;
+}
+
+.test__profile {
+    display: flex;
+}
+
+.test__title {
+    font-weight: 700;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.tests__img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.test__name {
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 16px;
+}
+
+.test__role {
+    color: #7c8ba1;
+    margin-top: 8px;
+    
+}
+
+.test__details {
+    margin-left: 24px;
+}
+
+.test__para {
+    font-size: 16px;
+    font-weight: 500;
+    opacity: 0.90;
+}
+
+.test__buttons {
+    display: flex;
+    align-items: center;
+    margin-left: 128px;
+    
+}
+.test__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    border-radius: 50%;
+    margin: 0 12px;
+}
+
+.test__button:hover {
+    background: lightgray;
+}
 
 /* 
 
@@ -779,6 +907,65 @@ START / CALL TO ACTION ↓
     position: relative;
     overflow: hidden;
 }
+
+.start__container {
+    padding: 96px 0;
+    width: 100%;
+    background-color: rgb(100, 21, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start__row {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1024px;
+    padding: 0 32px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.start__title {
+    width: 50%;
+    color: #fff;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.start__buttons {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+.start__button {
+    padding: 20px 40px;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 500px;
+    color: #f7fafc;
+}
+
+.start__button:nth-child(1) {
+    background: salmon;
+    margin-right: 32px;
+}
+
+.start__button:hover:nth-child(1) {
+    background: #f70d1a;
+}
+
+.start__button:nth-child(2) {
+    border: 1px solid grey;
+}
+
+.start__button:hover:nth-child(2) {
+    background: white;
+    color: rgb(100, 21, 255);
+}
+
 
 
 /* 
@@ -795,6 +982,8 @@ footer {
     position: relative;
     overflow: hidden;
 }
+
+
 
 
 /* 
